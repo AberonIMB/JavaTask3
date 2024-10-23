@@ -28,6 +28,9 @@ import java.util.Map;
 public class Task1
 {
     Map<Ticket, Goods> ticketToGoods = new HashMap<>();
+    // HashMap используется для ассоциации билетов с товарами.
+    // При поиске товара по билету сложность операции будет O(1),
+    // так как HashMap использует Хэш-функцию для быстрого доступа к элементу
 
     public enum Goods {
         /**
